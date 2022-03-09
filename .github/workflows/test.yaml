@@ -18,6 +18,8 @@ jobs:
     - name: Checkout Pull Request
       run: |
         hub pr checkout ${{ github.event.issue.number }}
+        git remote -v
+        git status
 
     - name: Write file
       run: |
