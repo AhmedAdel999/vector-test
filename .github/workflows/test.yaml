@@ -29,9 +29,9 @@ jobs:
             core.setFailed(`Request failed with error ${err}`)
           }
     - uses: actions/checkout@v2
-      with:
-        repository: ${{ fromJSON(steps.get-pr.outputs.result).head.repo.full_name }}
-        ref: ${{ fromJSON(steps.get-pr.outputs.result).head.sha }} # or .head.ref for branch name
+     # with:
+     #   repository: ${{ fromJSON(steps.get-pr.outputs.result).head.repo.full_name }}
+     #   ref: ${{ fromJSON(steps.get-pr.outputs.result).head.sha }} # or .head.ref for branch name
 
 
     - name: Checkout Pull Request
