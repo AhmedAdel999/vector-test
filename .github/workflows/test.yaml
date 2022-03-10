@@ -40,6 +40,10 @@ jobs:
         git remote -v
         git status
 
+    - name: Remotes
+      run: |
+        git remote -v
+
     - name: Write file
       run: |
           echo "Hello world" > test.txt
